@@ -2,7 +2,7 @@
 
 By Amanda Munari Guimaraes
 
-a protein sibcellular location prediction program
+a protein subcellular location prediction program
 
 ## Setup
 
