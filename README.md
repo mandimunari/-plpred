@@ -19,3 +19,9 @@ O arquivo *requirements.txt*  contém uma lista de itens ou pacotes que serão i
 
 ### Makefile
 No Makefile temos as especificações das regras que podem ser executadas. Basicamente o makefile é um arquivo para configuração de compilação utilizado pelo programa Make, cuja idéia é simplificar e agilizar a compilação de programas. 
+
+### Data
+No diretório data encontram-se os diretórios raw e processed. No diretório raw é onde se encontram os arquivos de banco de dados original. No diretório processed é onde se encontra o arquivo com os dados pré processados.
+
+### plpred
+No diretório plpred é onde todos os script em python estão armazenados.
