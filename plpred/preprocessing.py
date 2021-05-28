@@ -49,8 +49,23 @@ def generate_aa_composition_df(file_path:str, membrane_label:int) -> pd.DataFram
         df = df.append([protein_data], ignore_index=True)
     return df
 
+
 df_membrane = generate_aa_composition_df(file_path='../data/raw/membrane.fasta', membrane_label=1)
 df_cytoplasm = generate_aa_composition_df(file_path='../data/raw/cytoplasm.fasta', membrane_label=0)
 
 df_processed = pd.concat([df_membrane, df_cytoplasm])
 df_processed.to_csv('../data/processed/processed.csv', index=False)
+
+if __name__ == "__main__":
+
+    print('Processing FASTA file:membrane proteins')
+    df_membrane = generate_aa_composition_df(file_path='../data/raw/membrane.fasta', membrane_label=1)
+
+    print('Processing FASTA file:cytoplasm proteins')
+    df_cytoplasm = generate_aa_composition_df(file_path='../data/raw/cytoplasm.fasta', membrane_label=0)
+
+    df_processed = pd.concat([df_membrane, df_cytoplasm])
+
+    print('Saving data frame file')
+    df_processed.to_csv('../data/processed/processed.csv', index=False)
+
