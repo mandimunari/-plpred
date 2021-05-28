@@ -9,3 +9,6 @@ run_exploratory_data_analysis:
 	cd notebooks\
  		&& ipython 'ExploratoryDataAnalysis.ipynb' && \
 		jupyter nbconvert --to html 'ExploratoryDataAnalysis.ipynb'
+
+model_training:
+	python plpred/training.py
