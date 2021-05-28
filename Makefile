@@ -6,9 +6,20 @@ run_pre_process_data:
 		&& python 'preprocessing.py'
 
 run_exploratory_data_analysis:
-	cd notebooks\
- 		&& ipython 'ExploratoryDataAnalysis.ipynb' && \
-		jupyter nbconvert --to html 'ExploratoryDataAnalysis.ipynb'
+	plpred-preprocess -m data/raw/membrane.fasta \
+		-c data/raw/cytoplasm.fasta \
+		-o data/processed/processed.csv
 
 model_training:
-	python plpred/training.py
+	plpred-train -p data/processed/processed.csv \
+		-o data/models/model.pickle \
+		-r
+
+model_test:
+	python -m pytest
+
+server:
+	plpred-server \
+		--host 0.0.0.0 \
+		--port 8001 \
+		--model data/models/model.pickle
