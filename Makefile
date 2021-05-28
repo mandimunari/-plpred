@@ -12,3 +12,6 @@ run_exploratory_data_analysis:
 
 model_training:
 	python plpred/training.py
+
+model_test:
+	python -m pytest
