@@ -6,9 +6,12 @@ By Amanda Munari Guimaraes
 a protein subcellular location prediction program
 
 ## Setup
+```
 
 ```
 $ make setup
+```
+
 ```
 ## Estrutura do Projeto
 
