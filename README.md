@@ -6,9 +6,17 @@ A protein subcellular location prediction program
 
 ## Setup
 
-```
-$ make setup
-```
+```$ make setup```
+
+```$ make run_pre_process_data```
+	
+```$ make run_exploratory_data_analysis```
+
+```$ make model_training```
+
+```$ make model_test```
+
+```$ make server```
 
 
 ## Project Structure
