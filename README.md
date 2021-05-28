@@ -1,10 +1,8 @@
 # Plpred
 
-By Amanda Munari Guimarães
+A protein subcellular location prediction program by Amanda Munari Guimarães
 
-A protein subcellular location prediction program
-
-## Setup
+## Makefile
 
 ```$ make setup```
 
@@ -26,7 +24,7 @@ A protein subcellular location prediction program
 
 - requirements.txt: Libs needed for the project.
 
-- Makefile: Create "rules" to centralize and execute main commands.
+- Makefile: Create rules to centralize and execute main commands.
 
 - plpred: Main package directory, with application functions.
 
