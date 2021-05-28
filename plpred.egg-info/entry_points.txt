@@ -1,0 +1,6 @@
+[console_scripts]
+plpred-predict = plpred.prediction:main
+plpred-preprocess = plpred.preprocessing:main
+plpred-server = plpred.server:main
+plpred-train = plpred.training:main
+
