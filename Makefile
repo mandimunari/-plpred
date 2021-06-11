@@ -12,7 +12,7 @@ run_exploratory_data_analysis:
 
 model_training:
 	plpred-train -p data/processed/processed.csv \
-		-o data/models/model.pickle \
+		-o data/models/model.pickle --algorithm svm \
 		-r
 
 model_test:
@@ -21,5 +21,5 @@ model_test:
 server:
 	plpred-server \
 		--host 0.0.0.0 \
-		--port 8001 \
+		--port 8001\
 		--model data/models/model.pickle

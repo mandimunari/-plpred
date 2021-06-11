@@ -1,6 +1,8 @@
 # Plpred
 
-A protein subcellular location prediction program by Amanda Munari Guimarães
+A protein subcellular location prediction program by Amanda Munari Guimarães. 
+
+Available at: [https://amg-plpred.herokuapp.com/](https://amg-plpred.herokuapp.com/)
 
 ## Makefile
 
