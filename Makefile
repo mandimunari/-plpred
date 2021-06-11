@@ -21,5 +21,5 @@ model_test:
 server:
 	plpred-server \
 		--host 0.0.0.0 \
-		--port n \
+		--port 8001\
 		--model data/models/model.pickle
